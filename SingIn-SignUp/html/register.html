@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sign-up-form">
+      <div class="sign-up-box">
+        <form id="sign-up">
+          <div class="header">
+            <h1>Sign up</h1>
+          </div>
+          <div class="field">
+            <i class="uil uil-at"></i>
+            <input class="inp" type="email" name = "email"  placeholder="Email...">
+            <div class="error" id="email-error"></div>
+          </div>
+          <div class="field">
+            <i class="uil uil-lock-alt"></i>
+            <input class="inp" type="password" name = "password"  placeholder="Password...">
+            <div class="error" id="password-error"></div>
+          </div>
+          <div class="field">
+            <i class="uil uil-lock-access"></i>
+            <input class="inp" type="password" name = "confirmPassword"  placeholder="Confirm Password...">
+            <div class="error" id="confirmPassword-error"></div>
+          </div>
+          <div class="upload-btn-wrapper">
+            <input type="file" id="photo" /></br>
+            <button id="upload" onclick="uploadImage()">Upload Image</button>
+
+          <div class="field">
+            <div class="login">
+            <a href="../html/login.html">Already have an account? Sign in</a>
+          </div>
+        </div>
+
+          <div class="submit-box">
+            <div class="submit">
+              <input type="submit">
+            </div> 
+
+          </div>
+          <div class="header2">
+            <h2>Or sign up with...</h2>
+            </div>
+            <div class="additional-login">
+            <div class="google-login">
+              <i class="uil uil-google"></i>
+            </div>
+            <div class="facebook-login">
+              <i class="uil uil-facebook"></i>
+            </div>
+            <div class="twitter-login">
+              <i class="uil uil-twitter"></i>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+</body>
+</html>

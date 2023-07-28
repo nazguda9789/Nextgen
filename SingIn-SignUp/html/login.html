@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sign-in-form">
+        <div class="sign-in-box">
+          <form id="sign-in">
+            <div class="header">
+              <h1>Sign in</h1>
+            </div>
+            <div class="field">
+              <i class="uil uil-at"></i>
+              <input class="inp" type="email" name = "email"  placeholder="Email...">
+              <div class="error" id="email-error"></div>
+            </div>
+            <div class="field">
+              <i class="uil uil-lock-alt"></i>
+              <input class="inp" type="password" name = "password"  placeholder="Password...">
+              <div class="error" id="password-error"></div>
+            </div>
+            <div class="field">
+              <div class="login">
+              <a href="../html/register.html">Don't have an account? Sign up</a>
+            </div>
+          </div>
+            <div class="submit-box">
+              <div class="submit">
+                <input type="submit">
+              </div> 
+            </div>
+        </div>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+      <script src="../js/app.js"></script>
+      <script src="../js/login.js"></script>
+</body>
+</html>
